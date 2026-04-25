@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Movie</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+  body { background-color: #0b0b0b; color: white; }
+  .movie-card img { height: 300px; object-fit: cover; }
+  .movie-card { transition: transform 0.3s; }
+  .movie-card:hover { transform: scale(1.05); }
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand fw-bold fs-3 text-danger">🎬 Movie</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav me-auto ms-4">
+        <li class="nav-item"><a class="nav-link active">Homepage</a></li>
+        <li class="nav-item"><a class="nav-link">Toprate</a></li>
+        <li class="nav-item"><a class="nav-link">About</a></li>
+        <li class="nav-item"><a class="nav-link">Popular</a></li>
+        <li class="nav-item"><a class="nav-link">Register</a></li>
+      </ul>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search movies...">
+        <button class="btn btn-danger">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO CAROUSEL -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="https://i.pinimg.com/736x/f2/be/be/f2bebe893c7f5645b1ec0c63ade49ac5.jpg" class="d-block w-100 vh-100">
+      <div class="carousel-caption text-start">
+        <h1>🔥 Latest Blockbuster</h1>
+        <p>Watch trending movies right now</p>
+        <button class="btn btn-danger btn-lg">Play</button>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/1200x/dc/07/02/dc070293de899e8b01d6a8baeb9d7c06.jpg" class="d-block w-100 vh-100">
+      <div class="carousel-caption text-start">
+        <h1>🎬 New Releases</h1>
+        <p>Fresh content updated weekly</p>
+        <button class="btn btn-danger btn-lg">Watch Now</button>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- MOVIE SECTION TEMPLATE -->
+<div class="container mt-5">
+
+  <!-- TRENDING -->
+  <h3 class="mb-3">🔥 Trending Now</h3>
+  <div class="row g-3">
+    
+    <!-- CARD -->
+    <div class="col-lg-2 col-md-3 col-6">
+      <div class="card bg-dark movie-card">
+        <img src="https://i.pinimg.com/1200x/02/d9/1f/02d91f8899c03a2bf656e0b197753b7f.jpg">
+        <div class="card-body">
+          <h6 class="bg-white">RATATOUILEE</h6>
+          <h1 class="bg-danger">4,5$</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- COPY THIS BLOCK MORE TIMES -->
+    <div class="col-lg-2 col-md-3 col-6">
+      <div class="card bg-dark movie-card">
+        <img src="https://i.pinimg.com/736x/72/72/7e/72727e9e728723492b43f7f0c07f1829.jpg">
+        <div class="card-body">
+          <h6 class="bg-white">BOLT</h6>
+          <h1 class="bg-danger">4,5$</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-2 col-md-3 col-6">
+      <div class="card bg-dark movie-card">
+        <img src="https://i.pinimg.com/736x/b3/19/a0/b319a0a59dda7783d0629ee53a3914eb.jpg">
+        <div class="card-body">
+          <h6 class="bg-white">TWILIGHT</h6>
+          <h1 class="bg-danger">4,5$</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-2 col-md-3 col-6">
+      <div class="card bg-dark movie-card">
+        <img src="https://i.pinimg.com/1200x/e7/fa/c5/e7fac5b392131bd517e5456b5d6906b4.jpg">
+        <div class="card-body">
+          <h6 class="bg-white">HARRY POTTER</h6>
+          <h1 class="bg-danger">4,5$</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-2 col-md-3 col-6">
+      <div class="card bg-dark movie-card">
+        <img src="https://i.pinimg.com/736x/b6/41/06/b6410694a7325936ca965e82d77ee765.jpg">
+        <div class="card-body">
+          <h6 class="bg-white">Spiderman</h6>
+          <h1 class="bg-danger">4,5$</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-2 col-md-3 col-6">
+      <div class="card bg-dark movie-card">
+        <img src="https://i.pinimg.com/1200x/14/85/b5/1485b5a78274180bcce4a0fce0ef3c4a.jpg">
+        <div class="card-body">
+          <h6 class="bg-white">IRON MAN</h6>
+          <h1 class="bg-danger">4,5$</h1>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- TOP RATED -->
+  <h3 class="mt-5 mb-3">⭐ Top Rated</h3>
+  <div class="row g-3">
+
+    <!-- Repeat cards -->
+    <div class="col-lg-2 col-md-3 col-6">
+      <div class="card bg-dark movie-card">
+        <img src="https://i.pinimg.com/736x/7f/5f/45/7f5f45bd926d9472574196a0fbb06018.jpg">
+        <div class="card-body">
+          <h6 class="bg-white">THOR</h6>
+          <h1 class="bg-danger">4,5$</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-2 col-md-3 col-6">
+      <div class="card bg-dark movie-card">
+        <img src="https://i.pinimg.com/736x/df/cf/01/dfcf01a35ca474dede0f0af138c1a148.jpg">
+        <div class="card-body">
+          <h6 class="bg-white">HULK</h6>
+          <h1 class="bg-danger">4,5$</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-2 col-md-3 col-6">
+      <div class="card bg-dark movie-card">
+        <img src="https://i.pinimg.com/1200x/51/21/95/51219507e1a75ad909b51a5aaf65f335.jpg">
+        <div class="card-body"></div>
+          <h6 class="bg-white">TITAN</h6>
+          <h1 class="bg-danger">4,5$</h1>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-black text-center p-4 mt-5">
+  <p>© 2026 Movie Pro</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
