@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: black;
+    color: red;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    height: 80vh;
+    background: url('https://via.placeholder.com/1200x600') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 40px;
+    animation: slideIn 1s ease;
+}
+
+.hero-content p {
+    margin: 10px 0;
+}
+
+.hero button {
+    padding: 10px 20px;
+    border: none;
+    background: red;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    transform: scale(1.1);
+}
+
+/* Movies */
+.movies {
+    padding: 40px;
+    background: #111;
+    color: white;
+}
+
+.movie-row {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+/* Movie cards */
+.movie-row img {
+    width: 200px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* Hover zoom effect */
+.movie-row img:hover {
+    transform: scale(1.2);
+}
+
+/* Animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
